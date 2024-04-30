@@ -46,18 +46,18 @@
 
 
 
-      <a class="nav-item nav-link" href="/contact">Contact US </a>
+      <a class="nav-item nav-link" href="contact/">Contact US </a>
 
       <li class="nav-item dropdown">
            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false"><i class="fa-solid fa-user"></i> </a>
            <ul class="dropdown-menu">
                {%if user.is_authenticated%}
-               <li><a class="dropdown-item" href="/dashboard">Dashboard</a></li>
-               <li><a class="dropdown-item" href="/dashboard/orders">View Orders</a></li>
-               <li><a class="dropdown-item" href="/dashboard/profile_edit">Edit Profile</a></li>
+               <li><a class="dropdown-item" href="dashboard/">Dashboard</a></li>
+               <li><a class="dropdown-item" href="dashboard/orders/">View Orders</a></li>
+               <li><a class="dropdown-item" href="dashboard/profile_edit/">Edit Profile</a></li>
                {%else%}
-               <li><a class="dropdown-item" href="/login">Login</a></li>
-               <li><a class="dropdown-item" href="/register">Register</a></li>
+               <li><a class="dropdown-item" href="login/">Login</a></li>
+               <li><a class="dropdown-item" href="register/">Register</a></li>
                {%endif%}
 
 
@@ -67,7 +67,7 @@
 
 
 
-        <a class="nav-item nav-link" href="/cart"> <i class="fa-solid fa-cart-shopping"></i>   {{total_cart_items}} </a>
+        <a class="nav-item nav-link" href="cart/"> <i class="fa-solid fa-cart-shopping"></i>   {{total_cart_items}} </a>
 </div>
     </div>
   </div></div>
@@ -100,16 +100,16 @@
     <ul class="footer-useful list-unstyled"> Useful Links
         <hr>
          <li > <a class="footer-link text-decoration-none" href="/"> Home </a> </li>
-         <li><a class="footer-link text-decoration-none" href="/dashboard"> Account </a> </li>
-         <li > <a class="footer-link text-decoration-none" href="/dashboard/orders"> Orders </a> </li>
+         <li><a class="footer-link text-decoration-none" href="dashboard/"> Account </a> </li>
+         <li > <a class="footer-link text-decoration-none" href="dashboard/orders/"> Orders </a> </li>
 
     </ul>
     </div>
     <div class="footer-col col-md-3">
     <ul class="footer-useful list-unstyled"> About
     <hr>
-        <li><a class="footer-link text-decoration-none" href="/about"> About Us </a> </li>
-        <li><a class="footer-link text-decoration-none" href="/contact" > Contact Us </a></li>
+        <li><a class="footer-link text-decoration-none" href="about/"> About Us </a> </li>
+        <li><a class="footer-link text-decoration-none" href="contact/" > Contact Us </a></li>
 
     </ul>
     </div>

@@ -37,13 +37,13 @@ def register(request):
 
 
 def login(request):
-    form = LoginForm
+    form = LoginForm()
 
     if request.method == "POST":
         
-        form = LoginForm(request, data= request.POST)
+        form = LoginForm(request.POST)
 
-        if form.is_valid:
+        if form.is_valid():
 
             username = request.POST.get('username')
             password = request.POST.get('password')

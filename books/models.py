@@ -9,6 +9,7 @@ class books(models.Model):
     publication_date = models.DateTimeField(auto_now_add=True)
     ISBN=models.CharField(max_length=50)
     category = models.TextField()
+    price = models.FloatField()
 
     def __str__(self):
         return self.title
